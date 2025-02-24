@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure React</title>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script>
+        function App() {
+            // const time = new Date().toLocaleTimeString(); // static clock
+            // dynamic clock
+            const [time, setTime] = React.useState(new Date().toLocaleTimeString());
+
+            React.useEffect(() => {
+                setInterval(function () {
+                    setTime(new Date().toLocaleTimeString());
+                }, 1000); // time is updated once every 1 second
+            }, []); // empty array means useEffect runs only once
+
+            return React.createElement('header', null, `THIS IS SPARTA! ${time}`);
+        }
+        // 2nd argument null is for props, 3rd argument is children
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(React.createElement(App));
+    </script>
+    <p>Pure React app, no nodejs, no babel, only browser.</p>
+</body>
+
+</html>
