@@ -11,3 +11,4 @@
 - [Accordion v2](accordion-v2) ([preview](https://zcdhf7.csb.app))
 - [Tip Calculator](tip-calculator) ([preview](https://gdcxh2.csb.app))
 - [Expander](expander) ([preview](https://zrkxm9.csb.app))
+- [Currency Converter](currency-converter) ([preview](https://9dgzhv.csb.app))
