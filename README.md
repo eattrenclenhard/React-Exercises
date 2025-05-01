@@ -12,3 +12,4 @@
 - [Tip Calculator](tip-calculator) ([preview](https://gdcxh2.csb.app))
 - [Expander](expander) ([preview](https://zrkxm9.csb.app))
 - [Currency Converter](currency-converter) ([preview](https://9dgzhv.csb.app))
+- [UseGeolocation](useGeolocation) ([preview](https://ntmnf4.csb.app/))
